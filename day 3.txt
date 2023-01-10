@@ -1,0 +1,70 @@
+1.FOR THE GIVEN JSON OVER ALL FOR LOOPS(for, for in, for of, foreach)
+FOR LOOP:
+	for(i=n; i<n; i++)
+	{
+	console.log(i)
+	}
+FOR IN:
+	for(let i in obj1)
+	{
+	console.log(i);
+	}
+FOR OF:
+	for ( let element of students )
+	{
+	console.log(element)
+	}
+FOR EACH:
+	students.forEach(myFunction);
+	function students(marks)
+	{
+	console.log(marks);
+	}
+
+
+2.CREATE YOUR OWN RESUME DATA IN JSON FORMAT
+https://github.com/DIVA97/resume.git
+
+3.difference between window,screen and document in javascript
+
+WINDOW
+	The JavaScript window object sits at the top of the JavaScript Object hierarchy and represents the browser window. 
+The window object is supported by all browsers. All global JavaScript objects , functions, and variables automatically become 
+members of the window object.
+
+DOCUMENT
+	The Document interface represents any web page loaded in the browser and serves as an entry point into the web page's content,
+which is the DOM tree. When an HTML document is loaded into a web browser , it becomes a document object.
+
+SCREEN
+	Screen is a small information object about physical screen dimensions . It can be used to display screen width, height, colorDepth, pixelDepth etc. 
+It is not mandatory to write window prefix with screen object. It can be written without window prefix. 
+
+4. CODEKATA PRACTICE
+
+// Getting input via STDIN
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+  //start-here
+  //Your code goes here … replace the below line with your code logic 
+  var firstline = userInput[0];
+  var secondline = userInput[1];
+  var thirdline = userInput[2];
+ 
+  console.log(firstline);
+  console.log(secondline);
+  console.log(thirdline);
+
+  //end-here
+});
